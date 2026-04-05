@@ -100,3 +100,103 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.card-overlay {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+}
+
+.slide:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(56,189,248,0.5);
+}
+
+.team {
+    background: #ffffff;
+    text-align: center;
+    padding: 120px 80px;
+}
+
+.subtitle {
+    color: #2563eb;
+}
+
+.desc {
+    color: #777;
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.team-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 220px;
+    padding: 25px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.team-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.team-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: linear-gradient(135deg, #1e40af, #38bdf8);
+}
+
+.team-card:hover h3,
+.team-card:hover p {
+    color: white;
+}
+
+.role {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 13px;
+    color: #888;
+    margin: 10px 0 15px;
+    line-height: 1.5;
+}
+
+.socials {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.socials img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.socials img:hover {
+    transform: scale(1.2);
+}
