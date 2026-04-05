@@ -200,3 +200,43 @@ body {
 .socials img:hover {
     transform: scale(1.2);
 }
+
+.project {
+    padding: 120px 80px;
+    background: linear-gradient(135deg, #050816, #0a1a3a, #0f2a5a);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.project::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #38bdf8, transparent);
+    top: 30%;
+    right: 10%;
+    filter: blur(150px);
+    opacity: 0.6;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project-card {
+    width: 320px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 30px rgba(56,189,248,0.5);
+}
