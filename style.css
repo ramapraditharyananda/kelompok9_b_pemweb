@@ -1,99 +1,38 @@
-body{
-    font-family:'Poppins',sans-serif;
-    background: linear-gradient(135deg, #7200b4, #1e0017);
-    margin:0;
-    padding:40px;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background: #050816;
 }
 
-.container{
-    display:grid;
-    grid-template-columns: 1fr;
-    gap:30px;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    box-sizing: border-box;
+    background: rgba(10, 15, 30, 0.6);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
 }
 
-.card{
-    backdrop-filter: blur(15px);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius:20px;
-    padding:25px;
-    text-align:center;
-    color:white;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-    border:1px solid rgba(255,255,255,0.2);
-    transition: all 0.3s ease;
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
 }
 
-.card:hover{
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 0 30px rgba(255,255,255,0.2);
+.navbar a {
+    text-decoration: none;
+    color: #dbeafe;
+    font-weight: 500;
 }
 
-.profile{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:10px;
-    border:3px solid rgba(255,255,255,0.5);
-}
-
-h2{
-    margin:10px 0 5px;
-}
-
-.role{
-    font-size:13px;
-    opacity:0.85;
-    margin-bottom:10px;
-    line-height:1.4;
-}
-
-.badges{
-    margin:10px 0;
-}
-
-.badges span{
-    background: rgba(255,255,255,0.2);
-    padding:5px 10px;
-    border-radius:20px;
-    font-size:12px;
-    margin:3px;
-    display:inline-block;
-}
-
-.divider{
-    border:none;
-    height:1px;
-    background: rgba(255,255,255,0.2);
-    margin:15px 0;
-}
-
-.info{
-    margin: 10px auto;
-    font-size:14px;
-    text-align:left;
-}
-
-.info td{
-    padding:4px 6px;
-}
-
-.label{
-    width:70px;
-    font-weight:500;
-}
-
-.colon{
-    width:10px;
-    text-align:center;
-}
-
-.socials img{
-    width:35px;
-    margin:5px;
-    transition:0.3s;
-}
-
-.socials img:hover{
-    transform: scale(1.2);
+.navbar a:hover {
+    color: #38bdf8;
 }
